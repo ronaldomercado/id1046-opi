@@ -1,0 +1,8 @@
+record (ai,"BL10E-PS-PLC-01:CURRENT:TIME")
+{
+  
+}
+
+record (ai, "BL10E-PS-PLC-01:NX:INPUT")
+{
+}
