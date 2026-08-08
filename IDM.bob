@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>IDM_Top.bob</file>
+        <macros>
+          <prefix>TS02K-MO-</prefix>
+          <suff1>0</suff1>
+          <idname>CPMU6</idname>
+          <dom>TS02K</dom>
+          <pmac>192.168.0.200</pmac>
+          <server>r79-cs-rserv-03</server>
+        </macros>
+        <target>replace</target>
+      </action>
+    </actions>
+    <text>Open IDM bob</text>
+    <x>30</x>
+    <y>30</y>
+    <width>140</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>IDM_Top1.bob</file>
+        <macros>
+          <prefix>TS02K-MO-</prefix>
+          <suff1>0</suff1>
+          <idname>CPMU6</idname>
+          <dom>TS02K</dom>
+          <pmac>192.168.0.200</pmac>
+          <server>r79-cs-rserv-03</server>
+        </macros>
+        <target>replace</target>
+      </action>
+    </actions>
+    <text>Open IDM1 bob</text>
+    <x>30</x>
+    <y>90</y>
+    <width>140</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>IDM_Top2.bob</file>
+        <macros>
+          <prefix>TS02K-MO-</prefix>
+          <suff1>0</suff1>
+          <idname>CPMU6</idname>
+          <dom>TS02K</dom>
+          <pmac>192.168.0.200</pmac>
+          <server>r79-cs-rserv-03</server>
+        </macros>
+        <target>replace</target>
+      </action>
+    </actions>
+    <text>Open IDM2 bob</text>
+    <x>30</x>
+    <y>160</y>
+    <width>140</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_3</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>IDM_Top3.bob</file>
+        <macros>
+          <prefix>TS02K-MO-</prefix>
+          <suff1>0</suff1>
+          <idname>CPMU6</idname>
+          <dom>TS02K</dom>
+          <pmac>192.168.0.200</pmac>
+          <server>r79-cs-rserv-03</server>
+        </macros>
+        <target>replace</target>
+      </action>
+    </actions>
+    <text>Open IDM3 bob</text>
+    <x>190</x>
+    <y>30</y>
+    <width>140</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_4</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>IDM_Top4.bob</file>
+        <macros>
+          <prefix>TS02K-MO-</prefix>
+          <suff1>0</suff1>
+          <idname>CPMU6</idname>
+          <dom>TS02K</dom>
+          <pmac>192.168.0.200</pmac>
+          <server>r79-cs-rserv-03</server>
+        </macros>
+        <target>replace</target>
+      </action>
+    </actions>
+    <text>Open IDM4 bob</text>
+    <x>190</x>
+    <y>90</y>
+    <width>140</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>
