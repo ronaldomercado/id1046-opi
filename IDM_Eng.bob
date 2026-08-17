@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <x>952</x>
   <y>189</y>
-  <height>674</height>
+  <height>640</height>
   <background_color>
     <color name="Canvas" red="200" green="200" blue="200">
     </color>
@@ -24,36 +24,6 @@
       <color name="Wid-alt/Anno-sec" red="174" green="174" blue="174">
       </color>
     </background_color>
-  </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>EDM Exit Button</name>
-    <actions>
-      <action type="execute">
-        <description>Execute Script</description>
-        <script file="EmbeddedJs">
-          <text><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);ScriptUtil.closeAssociatedOPI(widget);]]></text>
-        </script>
-      </action>
-    </actions>
-    <text>Exit</text>
-    <x>680</x>
-    <y>637</y>
-    <width>97</width>
-    <height>25</height>
-    <font>
-      <font family="liberation sans" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="Exit: FG" red="192" green="0" blue="192">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Controller: BG" red="205" green="205" blue="205">
-      </color>
-    </background_color>
-    <tooltip>$(actions)</tooltip>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="label" version="2.0.0">
     <name>EDM Label</name>
@@ -111,7 +81,7 @@
       <action type="open_display">
         <description>Open Display</description>
         <file>idplc_Config.bob</file>
-        <target>window</target>
+        <target>tab</target>
       </action>
     </actions>
     <text>PLC Configuration</text>
