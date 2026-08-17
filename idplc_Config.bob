@@ -4,43 +4,13 @@
   <x>1095</x>
   <y>152</y>
   <width>704</width>
-  <height>584</height>
+  <height>560</height>
   <background_color>
     <color name="Canvas" red="200" green="200" blue="200">
     </color>
   </background_color>
   <grid_step_x>8</grid_step_x>
   <grid_step_y>8</grid_step_y>
-  <widget type="action_button" version="3.0.0">
-    <name>EDM Exit Button</name>
-    <actions>
-      <action type="execute">
-        <description>Execute Script</description>
-        <script file="EmbeddedJs">
-          <text><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);ScriptUtil.closeAssociatedOPI(widget);]]></text>
-        </script>
-      </action>
-    </actions>
-    <text>Exit</text>
-    <x>600</x>
-    <y>552</y>
-    <width>97</width>
-    <height>25</height>
-    <font>
-      <font family="liberation sans" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="Exit: FG" red="192" green="0" blue="192">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Controller: BG" red="205" green="205" blue="205">
-      </color>
-    </background_color>
-    <tooltip>$(actions)</tooltip>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>EDM Label</name>
     <text>DLS ID PLC Configuration    ($(prefix))   ID   $(idname) </text>
@@ -65,450 +35,6 @@
       <color name="Black" red="0" green="0" blue="0">
       </color>
     </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>EDM Label</name>
-    <text> 
-PLC Potentiometer
-values are in
-1000s of microns
-(Divide by 100,000
-to get mm)
- </text>
-    <x>576</x>
-    <y>408</y>
-    <width>120</width>
-    <height>88</height>
-    <font>
-      <font family="liberation sans" style="REGULAR" size="10.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Grey 65%" red="166" green="166" blue="166">
-      </color>
-    </background_color>
-    <transparent>false</transparent>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_style>0</border_style>
-    <height>49</height>
-    <lock_children>true</lock_children>
-    <name>0</name>
-    <show_scrollbar>false</show_scrollbar>
-    <transparent>true</transparent>
-    <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0">
-      <background_color>
-        <color blue="166" green="166" name="Grey 65%" red="166">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>41</height>
-      <line_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>EDM Rectangle</name>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <width>161</width>
-      <x>0</x>
-      <y>8</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-      <auto_size>false</auto_size>
-      <background_color>
-        <color blue="128" green="128" name="Grey 50%" red="128">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color blue="230" green="230" name="Grey 90%" red="230">
-        </color>
-      </border_color>
-      <border_style>0</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="12" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="230" green="230" name="Grey 90%" red="230">
-        </color>
-      </foreground_color>
-      <height>16</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>EDM Label</name>
-      <text>PLC Gap</text>
-      <transparent>false</transparent>
-      <width>104</width>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0">
-      <background_color>
-        <color blue="192" green="192" name="Grey 75%" red="192">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>17</height>
-      <line_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>EDM Rectangle</name>
-      <transparent>true</transparent>
-      <visible>true</visible>
-      <width>105</width>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-      <background_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_style>None</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="96" green="255" name="Monitor: FG" red="96">
-        </color>
-      </foreground_color>
-      <format_type>1</format_type>
-      <height>16</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>EDM TextInput</name>
-      <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(prefix)PLC-$(suff1)1:GAP</pv_name>
-      <show_units>false</show_units>
-      <transparent>false</transparent>
-      <width>100</width>
-      <x>8</x>
-      <y>24</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-      <auto_size>false</auto_size>
-      <background_color>
-        <color blue="255" green="255" name="White" red="255">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </border_color>
-      <border_style>0</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="0" green="0" name="Text: FG" red="0">
-        </color>
-      </foreground_color>
-      <height>16</height>
-      <horizontal_alignment>0</horizontal_alignment>
-      <name>EDM Label</name>
-      <text>Gap</text>
-      <transparent>true</transparent>
-      <width>40</width>
-      <x>112</x>
-      <y>24</y>
-    </widget>
-    <width>161</width>
-    <x>8</x>
-    <y>40</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_style>0</border_style>
-    <height>49</height>
-    <lock_children>true</lock_children>
-    <name>1</name>
-    <show_scrollbar>false</show_scrollbar>
-    <transparent>true</transparent>
-    <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0">
-      <background_color>
-        <color blue="166" green="166" name="Grey 65%" red="166">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>41</height>
-      <line_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>EDM Rectangle</name>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <width>161</width>
-      <x>0</x>
-      <y>8</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-      <auto_size>false</auto_size>
-      <background_color>
-        <color blue="128" green="128" name="Grey 50%" red="128">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color blue="230" green="230" name="Grey 90%" red="230">
-        </color>
-      </border_color>
-      <border_style>0</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="12" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="230" green="230" name="Grey 90%" red="230">
-        </color>
-      </foreground_color>
-      <height>16</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>EDM Label</name>
-      <text>PLC Offset</text>
-      <transparent>false</transparent>
-      <width>104</width>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0">
-      <background_color>
-        <color blue="192" green="192" name="Grey 75%" red="192">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>17</height>
-      <line_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>EDM Rectangle</name>
-      <transparent>true</transparent>
-      <visible>true</visible>
-      <width>105</width>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-      <background_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_style>None</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="96" green="255" name="Monitor: FG" red="96">
-        </color>
-      </foreground_color>
-      <format_type>1</format_type>
-      <height>16</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>EDM TextInput</name>
-      <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(prefix)PLC-$(suff1)1:OFFSET</pv_name>
-      <show_units>false</show_units>
-      <transparent>false</transparent>
-      <width>100</width>
-      <x>8</x>
-      <y>24</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-      <auto_size>false</auto_size>
-      <background_color>
-        <color blue="255" green="255" name="White" red="255">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </border_color>
-      <border_style>0</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="0" green="0" name="Text: FG" red="0">
-        </color>
-      </foreground_color>
-      <height>16</height>
-      <horizontal_alignment>0</horizontal_alignment>
-      <name>EDM Label</name>
-      <text>Offset</text>
-      <transparent>true</transparent>
-      <width>40</width>
-      <x>112</x>
-      <y>24</y>
-    </widget>
-    <width>161</width>
-    <x>8</x>
-    <y>96</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_style>0</border_style>
-    <height>49</height>
-    <lock_children>true</lock_children>
-    <name>2</name>
-    <show_scrollbar>false</show_scrollbar>
-    <transparent>true</transparent>
-    <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0">
-      <background_color>
-        <color blue="166" green="166" name="Grey 65%" red="166">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>41</height>
-      <line_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>EDM Rectangle</name>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <width>161</width>
-      <x>0</x>
-      <y>8</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-      <auto_size>false</auto_size>
-      <background_color>
-        <color blue="128" green="128" name="Grey 50%" red="128">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color blue="230" green="230" name="Grey 90%" red="230">
-        </color>
-      </border_color>
-      <border_style>0</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="12" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="230" green="230" name="Grey 90%" red="230">
-        </color>
-      </foreground_color>
-      <height>16</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>EDM Label</name>
-      <text>PLC Taper</text>
-      <transparent>false</transparent>
-      <width>104</width>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0">
-      <background_color>
-        <color blue="192" green="192" name="Grey 75%" red="192">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>17</height>
-      <line_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>EDM Rectangle</name>
-      <transparent>true</transparent>
-      <visible>true</visible>
-      <width>105</width>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-      <background_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_style>None</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="96" green="255" name="Monitor: FG" red="96">
-        </color>
-      </foreground_color>
-      <format_type>1</format_type>
-      <height>16</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>EDM TextInput</name>
-      <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(prefix)PLC-$(suff1)1:TAPER</pv_name>
-      <show_units>false</show_units>
-      <transparent>false</transparent>
-      <width>100</width>
-      <x>8</x>
-      <y>24</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-      <auto_size>false</auto_size>
-      <background_color>
-        <color blue="255" green="255" name="White" red="255">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </border_color>
-      <border_style>0</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="0" green="0" name="Text: FG" red="0">
-        </color>
-      </foreground_color>
-      <height>16</height>
-      <horizontal_alignment>0</horizontal_alignment>
-      <name>EDM Label</name>
-      <text>Taper</text>
-      <transparent>true</transparent>
-      <width>40</width>
-      <x>112</x>
-      <y>24</y>
-    </widget>
-    <width>161</width>
-    <x>8</x>
-    <y>152</y>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>EDM Rectangle</name>
@@ -597,7 +123,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)2:RAW</pv_name>
+    <pv_name>$(prefix)AXIS-02:RAW</pv_name>
     <x>288</x>
     <y>144</y>
     <height>16</height>
@@ -620,7 +146,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)1:RAW</pv_name>
+    <pv_name>$(prefix)AXIS-01:RAW</pv_name>
     <x>184</x>
     <y>144</y>
     <height>16</height>
@@ -693,7 +219,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)1:POS</pv_name>
+    <pv_name>$(prefix)AXIS-01:POS</pv_name>
     <x>184</x>
     <y>168</y>
     <height>16</height>
@@ -716,7 +242,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)2:POS</pv_name>
+    <pv_name>$(prefix)AXIS-02:POS</pv_name>
     <x>288</x>
     <y>168</y>
     <height>16</height>
@@ -818,7 +344,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)1:ENCD</pv_name>
+    <pv_name>$(prefix)AXIS-01:ENCD</pv_name>
     <x>184</x>
     <y>192</y>
     <height>16</height>
@@ -841,7 +367,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)2:ENCD</pv_name>
+    <pv_name>$(prefix)AXIS-02:ENCD</pv_name>
     <x>288</x>
     <y>192</y>
     <height>16</height>
@@ -889,7 +415,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)2:OFF</pv_name>
+    <pv_name>$(prefix)AXIS-02:OFF</pv_name>
     <x>288</x>
     <y>120</y>
     <height>16</height>
@@ -912,7 +438,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)1:OFF</pv_name>
+    <pv_name>$(prefix)AXIS-01:OFF</pv_name>
     <x>184</x>
     <y>120</y>
     <height>16</height>
@@ -935,7 +461,7 @@ to get mm)
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>EDM Text Entry</name>
-    <pv_name>$(prefix)AXIS-$(suff1)1:OUT:OFF</pv_name>
+    <pv_name>$(prefix)AXIS-01:OUT:OFF</pv_name>
     <x>184</x>
     <y>96</y>
     <width>97</width>
@@ -960,7 +486,7 @@ to get mm)
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>EDM Text Entry</name>
-    <pv_name>$(prefix)AXIS-$(suff1)2:OUT:OFF</pv_name>
+    <pv_name>$(prefix)AXIS-02:OUT:OFF</pv_name>
     <x>288</x>
     <y>96</y>
     <width>97</width>
@@ -1010,7 +536,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)4:RAW</pv_name>
+    <pv_name>$(prefix)AXIS-04:RAW</pv_name>
     <x>496</x>
     <y>144</y>
     <height>16</height>
@@ -1033,7 +559,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)3:RAW</pv_name>
+    <pv_name>$(prefix)AXIS-03:RAW</pv_name>
     <x>392</x>
     <y>144</y>
     <height>16</height>
@@ -1056,7 +582,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)3:POS</pv_name>
+    <pv_name>$(prefix)AXIS-03:POS</pv_name>
     <x>392</x>
     <y>168</y>
     <height>16</height>
@@ -1079,7 +605,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)4:POS</pv_name>
+    <pv_name>$(prefix)AXIS-04:POS</pv_name>
     <x>496</x>
     <y>168</y>
     <height>16</height>
@@ -1102,7 +628,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)3:ENCD</pv_name>
+    <pv_name>$(prefix)AXIS-03:ENCD</pv_name>
     <x>392</x>
     <y>192</y>
     <height>16</height>
@@ -1125,7 +651,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)4:ENCD</pv_name>
+    <pv_name>$(prefix)AXIS-04:ENCD</pv_name>
     <x>496</x>
     <y>192</y>
     <height>16</height>
@@ -1148,7 +674,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)4:OFF</pv_name>
+    <pv_name>$(prefix)AXIS-04:OFF</pv_name>
     <x>496</x>
     <y>120</y>
     <height>16</height>
@@ -1171,7 +697,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextInput</name>
-    <pv_name>$(prefix)AXIS-$(suff1)3:OFF</pv_name>
+    <pv_name>$(prefix)AXIS-03:OFF</pv_name>
     <x>392</x>
     <y>120</y>
     <height>16</height>
@@ -1194,7 +720,7 @@ to get mm)
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>EDM Text Entry</name>
-    <pv_name>$(prefix)AXIS-$(suff1)3:OUT:OFF</pv_name>
+    <pv_name>$(prefix)AXIS-03:OUT:OFF</pv_name>
     <x>392</x>
     <y>96</y>
     <width>97</width>
@@ -1219,7 +745,7 @@ to get mm)
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>EDM Text Entry</name>
-    <pv_name>$(prefix)AXIS-$(suff1)4:OUT:OFF</pv_name>
+    <pv_name>$(prefix)AXIS-04:OUT:OFF</pv_name>
     <x>496</x>
     <y>96</y>
     <width>97</width>
@@ -1358,7 +884,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM Text Update</name>
-    <pv_name>$(prefix)AXIS-$(suff1)1:NSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-01:NSLIM</pv_name>
     <x>193</x>
     <y>265</y>
     <width>94</width>
@@ -1385,7 +911,7 @@ to get mm)
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>EDM Text Entry</name>
-    <pv_name>$(prefix)AXIS-$(suff1)1:OUT:NSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-01:OUT:NSLIM</pv_name>
     <x>96</x>
     <y>264</y>
     <width>97</width>
@@ -1462,7 +988,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM Text Update</name>
-    <pv_name>$(prefix)AXIS-$(suff1)1:PSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-01:PSLIM</pv_name>
     <x>409</x>
     <y>265</y>
     <width>94</width>
@@ -1489,7 +1015,7 @@ to get mm)
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>EDM Text Entry</name>
-    <pv_name>$(prefix)AXIS-$(suff1)1:OUT:PSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-01:OUT:PSLIM</pv_name>
     <x>312</x>
     <y>264</y>
     <width>97</width>
@@ -1540,7 +1066,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM Text Update</name>
-    <pv_name>$(prefix)AXIS-$(suff1)2:PSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-02:PSLIM</pv_name>
     <x>409</x>
     <y>289</y>
     <width>94</width>
@@ -1567,7 +1093,7 @@ to get mm)
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>EDM Text Entry</name>
-    <pv_name>$(prefix)AXIS-$(suff1)2:OUT:PSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-02:OUT:PSLIM</pv_name>
     <x>312</x>
     <y>288</y>
     <width>97</width>
@@ -1592,7 +1118,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM Text Update</name>
-    <pv_name>$(prefix)AXIS-$(suff1)2:NSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-02:NSLIM</pv_name>
     <x>193</x>
     <y>289</y>
     <width>94</width>
@@ -1619,7 +1145,7 @@ to get mm)
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>EDM Text Entry</name>
-    <pv_name>$(prefix)AXIS-$(suff1)2:OUT:NSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-02:OUT:NSLIM</pv_name>
     <x>96</x>
     <y>288</y>
     <width>97</width>
@@ -1670,7 +1196,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM Text Update</name>
-    <pv_name>$(prefix)AXIS-$(suff1)3:NSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-03:NSLIM</pv_name>
     <x>193</x>
     <y>313</y>
     <width>94</width>
@@ -1697,7 +1223,7 @@ to get mm)
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>EDM Text Entry</name>
-    <pv_name>$(prefix)AXIS-$(suff1)3:OUT:NSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-03:OUT:NSLIM</pv_name>
     <x>96</x>
     <y>312</y>
     <width>97</width>
@@ -1748,7 +1274,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM Text Update</name>
-    <pv_name>$(prefix)AXIS-$(suff1)3:PSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-03:PSLIM</pv_name>
     <x>409</x>
     <y>313</y>
     <width>94</width>
@@ -1775,7 +1301,7 @@ to get mm)
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>EDM Text Entry</name>
-    <pv_name>$(prefix)AXIS-$(suff1)3:OUT:PSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-03:OUT:PSLIM</pv_name>
     <x>312</x>
     <y>312</y>
     <width>97</width>
@@ -1800,7 +1326,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM Text Update</name>
-    <pv_name>$(prefix)AXIS-$(suff1)4:PSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-04:PSLIM</pv_name>
     <x>409</x>
     <y>337</y>
     <width>94</width>
@@ -1827,7 +1353,7 @@ to get mm)
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>EDM Text Entry</name>
-    <pv_name>$(prefix)AXIS-$(suff1)4:OUT:PSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-04:OUT:PSLIM</pv_name>
     <x>312</x>
     <y>336</y>
     <width>97</width>
@@ -1852,7 +1378,7 @@ to get mm)
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM Text Update</name>
-    <pv_name>$(prefix)AXIS-$(suff1)4:NSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-04:NSLIM</pv_name>
     <x>193</x>
     <y>337</y>
     <width>94</width>
@@ -1879,7 +1405,7 @@ to get mm)
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>EDM Text Entry</name>
-    <pv_name>$(prefix)AXIS-$(suff1)4:OUT:NSLIM</pv_name>
+    <pv_name>$(prefix)AXIS-04:OUT:NSLIM</pv_name>
     <x>96</x>
     <y>336</y>
     <width>97</width>
@@ -1928,1371 +1454,1834 @@ to get mm)
       </color>
     </border_color>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_style>0</border_style>
-    <height>137</height>
-    <lock_children>true</lock_children>
-    <name>3</name>
-    <show_scrollbar>false</show_scrollbar>
-    <transparent>true</transparent>
-    <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0">
-      <background_color>
-        <color blue="166" green="166" name="Grey 65%" red="166">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>121</height>
-      <line_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>EDM Rectangle</name>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <width>153</width>
-      <x>0</x>
-      <y>16</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-      <auto_size>false</auto_size>
-      <background_color>
-        <color blue="128" green="128" name="Grey 50%" red="128">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color blue="230" green="230" name="Grey 90%" red="230">
-        </color>
-      </border_color>
-      <border_style>0</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="12" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="230" green="230" name="Grey 90%" red="230">
-        </color>
-      </foreground_color>
-      <height>32</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>EDM Label</name>
-      <text>PLC Communication
-Counter</text>
-      <transparent>false</transparent>
-      <width>128</width>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0">
-      <background_color>
-        <color blue="192" green="192" name="Grey 75%" red="192">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>33</height>
-      <line_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>EDM Rectangle</name>
-      <transparent>true</transparent>
-      <visible>true</visible>
-      <width>129</width>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-      <background_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_style>None</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="96" green="255" name="Monitor: FG" red="96">
-        </color>
-      </foreground_color>
-      <format_type>1</format_type>
-      <height>16</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>EDM TextInput</name>
-      <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(prefix)PLC-$(suff1)1:OUT:COUNT</pv_name>
-      <show_units>false</show_units>
-      <transparent>false</transparent>
-      <width>64</width>
-      <x>8</x>
-      <y>48</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-      <auto_size>false</auto_size>
-      <background_color>
-        <color blue="255" green="255" name="White" red="255">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </border_color>
-      <border_style>0</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="0" green="0" name="Text: FG" red="0">
-        </color>
-      </foreground_color>
-      <height>32</height>
-      <horizontal_alignment>0</horizontal_alignment>
-      <name>EDM Label</name>
-      <text>Comms
-counter</text>
-      <transparent>true</transparent>
-      <width>56</width>
-      <x>80</x>
-      <y>40</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-      <background_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_style>None</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="96" green="255" name="Monitor: FG" red="96">
-        </color>
-      </foreground_color>
-      <format_type>1</format_type>
-      <height>16</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>EDM TextInput</name>
-      <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(prefix)PLC-$(suff1)1:COUNTRBK</pv_name>
-      <show_units>false</show_units>
-      <transparent>false</transparent>
-      <width>64</width>
-      <x>8</x>
-      <y>80</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-      <auto_size>false</auto_size>
-      <background_color>
-        <color blue="255" green="255" name="White" red="255">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </border_color>
-      <border_style>0</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="0" green="0" name="Text: FG" red="0">
-        </color>
-      </foreground_color>
-      <height>32</height>
-      <horizontal_alignment>0</horizontal_alignment>
-      <name>EDM Label</name>
-      <text>Comms
-counter rbk</text>
-      <transparent>true</transparent>
-      <width>80</width>
-      <x>80</x>
-      <y>72</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-      <background_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_style>None</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="96" green="255" name="Monitor: FG" red="96">
-        </color>
-      </foreground_color>
-      <format_type>1</format_type>
-      <height>16</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>EDM TextInput</name>
-      <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(prefix)PLC-$(suff1)1:COUNT</pv_name>
-      <show_units>false</show_units>
-      <transparent>false</transparent>
-      <width>64</width>
-      <x>8</x>
-      <y>112</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-      <auto_size>false</auto_size>
-      <background_color>
-        <color blue="255" green="255" name="White" red="255">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </border_color>
-      <border_style>0</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="0" green="0" name="Text: FG" red="0">
-        </color>
-      </foreground_color>
-      <height>32</height>
-      <horizontal_alignment>0</horizontal_alignment>
-      <name>EDM Label</name>
-      <text>PLC
-counter</text>
-      <transparent>true</transparent>
-      <width>56</width>
-      <x>80</x>
-      <y>104</y>
-    </widget>
-    <width>161</width>
-    <x>536</x>
-    <y>224</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_style>0</border_style>
-    <height>209</height>
-    <lock_children>true</lock_children>
+  <widget type="group" version="3.0.0">
     <name>4</name>
-    <show_scrollbar>false</show_scrollbar>
-    <transparent>true</transparent>
-    <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0">
-      <background_color>
-        <color blue="166" green="166" name="Grey 65%" red="166">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>201</height>
-      <line_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>EDM Rectangle</name>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <width>561</width>
-      <x>0</x>
-      <y>8</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-      <auto_size>false</auto_size>
-      <background_color>
-        <color blue="128" green="128" name="Grey 50%" red="128">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color blue="230" green="230" name="Grey 90%" red="230">
-        </color>
-      </border_color>
-      <border_style>0</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="12" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="230" green="230" name="Grey 90%" red="230">
-        </color>
-      </foreground_color>
-      <height>16</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>EDM Label</name>
-      <text>PLC Tilt</text>
-      <transparent>false</transparent>
-      <width>144</width>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0">
-      <background_color>
-        <color blue="192" green="192" name="Grey 75%" red="192">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>17</height>
-      <line_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>EDM Rectangle</name>
-      <transparent>true</transparent>
-      <visible>true</visible>
-      <width>145</width>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0">
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_style>0</border_style>
-      <height>41</height>
-      <lock_children>true</lock_children>
-      <name>0</name>
-      <show_scrollbar>false</show_scrollbar>
-      <transparent>true</transparent>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)STAT-$(suff1)1:ENCDIST</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>0</x>
-        <y>0</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)STAT-$(suff1)1:BMLENGTH</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>0</x>
-        <y>24</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>16</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Beam length</text>
-        <transparent>true</transparent>
-        <width>88</width>
-        <x>104</x>
-        <y>24</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>16</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Encoder dist.</text>
-        <transparent>true</transparent>
-        <width>88</width>
-        <x>104</x>
-        <y>0</y>
-      </widget>
-      <width>193</width>
-      <x>368</x>
-      <y>32</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0">
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_style>0</border_style>
-      <height>105</height>
-      <lock_children>true</lock_children>
-      <name>1</name>
-      <show_scrollbar>false</show_scrollbar>
-      <transparent>true</transparent>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>16</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Extreme</text>
-        <transparent>true</transparent>
-        <width>64</width>
-        <x>104</x>
-        <y>88</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)STAT-$(suff1)1:TILTEXTR</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>0</x>
-        <y>88</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)STAT-$(suff1)1:TILTABS</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>0</x>
-        <y>64</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>16</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Absolute</text>
-        <transparent>true</transparent>
-        <width>64</width>
-        <x>104</x>
-        <y>64</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>16</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Safe</text>
-        <transparent>true</transparent>
-        <width>64</width>
-        <x>104</x>
-        <y>40</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)STAT-$(suff1)1:TILTSAFE</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>0</x>
-        <y>40</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>40</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Window
-Limits</text>
-        <transparent>true</transparent>
-        <width>168</width>
-        <x>0</x>
-        <y>0</y>
-      </widget>
-      <width>169</width>
-      <x>368</x>
-      <y>96</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-      <auto_size>false</auto_size>
-      <background_color>
-        <color blue="255" green="255" name="White" red="255">
-        </color>
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color blue="0" green="0" name="Black" red="0">
-        </color>
-      </border_color>
-      <border_style>0</border_style>
-      <font>
-        <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-        </fontdata>
-      </font>
-      <foreground_color>
-        <color blue="0" green="0" name="Text: FG" red="0">
-        </color>
-      </foreground_color>
-      <height>0</height>
-      <horizontal_alignment>0</horizontal_alignment>
-      <name>EDM Label</name>
-      <text>
-      </text>
-      <transparent>true</transparent>
-      <width>3</width>
-      <x>112</x>
-      <y>16</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0">
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_style>0</border_style>
-      <height>185</height>
-      <lock_children>true</lock_children>
-      <name>2</name>
-      <show_scrollbar>false</show_scrollbar>
-      <transparent>true</transparent>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>24</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Upper</text>
-        <transparent>true</transparent>
-        <width>96</width>
-        <x>0</x>
-        <y>0</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>24</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Lower</text>
-        <transparent>true</transparent>
-        <width>96</width>
-        <x>104</x>
-        <y>0</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>16</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Tilt calculated (mrads)</text>
-        <transparent>true</transparent>
-        <width>144</width>
-        <x>208</x>
-        <y>144</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>16</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Tilt temperature</text>
-        <transparent>true</transparent>
-        <width>120</width>
-        <x>208</x>
-        <y>168</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)1:RAW</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>0</x>
-        <y>96</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>16</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Tilt Sensor raw</text>
-        <transparent>true</transparent>
-        <width>112</width>
-        <x>208</x>
-        <y>96</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>16</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Pot Tilt derived</text>
-        <transparent>true</transparent>
-        <width>104</width>
-        <x>208</x>
-        <y>72</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)1:DER</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>0</x>
-        <y>72</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>16</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Tilt Sensor calculated</text>
-        <transparent>true</transparent>
-        <width>144</width>
-        <x>208</x>
-        <y>120</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)1:TILT</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>0</x>
-        <y>120</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)1:MRADS</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>0</x>
-        <y>144</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)1:TEMP</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>0</x>
-        <y>168</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>16</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Set offset</text>
-        <transparent>true</transparent>
-        <width>88</width>
-        <x>208</x>
-        <y>24</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0">
-        <background_color>
-          <color blue="205" green="205" name="Controller: BG" red="205">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>3</border_style>
-        <border_width>0</border_width>
-        <font>
-          <fontdata fontName="liberation sans" height="12" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </foreground_color>
-        <format_type>0</format_type>
-        <height>17</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <line_width>1</line_width>
-        <name>EDM Text Entry</name>
-        <precision>4</precision>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)1:OUT:UOFF</pv_name>
-        <show_units>true</show_units>
-        <style>0</style>
-        <transparent>false</transparent>
-        <width>97</width>
-        <x>0</x>
-        <y>24</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-        <auto_size>false</auto_size>
-        <background_color>
-          <color blue="255" green="255" name="White" red="255">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>0</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="0" green="0" name="Text: FG" red="0">
-          </color>
-        </foreground_color>
-        <height>16</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <name>EDM Label</name>
-        <text>Tilt offset</text>
-        <transparent>true</transparent>
-        <width>88</width>
-        <x>208</x>
-        <y>48</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)1:UOFF</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>0</x>
-        <y>48</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)2:TEMP</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>104</x>
-        <y>168</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)2:MRADS</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>104</x>
-        <y>144</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)2:TILT</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>104</x>
-        <y>120</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)2:DER</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>104</x>
-        <y>72</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)2:RAW</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>104</x>
-        <y>96</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-        <background_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_style>None</border_style>
-        <font>
-          <fontdata fontName="liberation sans" height="14" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <foreground_color>
-          <color blue="96" green="255" name="Monitor: FG" red="96">
-          </color>
-        </foreground_color>
-        <format_type>1</format_type>
-        <height>16</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>EDM TextInput</name>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)2:LOFF</pv_name>
-        <show_units>false</show_units>
-        <transparent>false</transparent>
-        <width>100</width>
-        <x>104</x>
-        <y>48</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0">
-        <background_color>
-          <color blue="205" green="205" name="Controller: BG" red="205">
-          </color>
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </border_color>
-        <border_style>3</border_style>
-        <border_width>0</border_width>
-        <font>
-          <fontdata fontName="liberation sans" height="12" pixels="true" style="0">
-          </fontdata>
-        </font>
-        <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color blue="0" green="0" name="Black" red="0">
-          </color>
-        </foreground_color>
-        <format_type>0</format_type>
-        <height>17</height>
-        <horizontal_alignment>0</horizontal_alignment>
-        <line_width>1</line_width>
-        <name>EDM Text Entry</name>
-        <precision>4</precision>
-        <precision_from_pv>true</precision_from_pv>
-        <pv_name>$(prefix)TILT-$(suff1)2:OUT:LOFF</pv_name>
-        <show_units>true</show_units>
-        <style>0</style>
-        <transparent>false</transparent>
-        <width>97</width>
-        <x>104</x>
-        <y>24</y>
-      </widget>
-      <width>353</width>
-      <x>8</x>
-      <y>16</y>
-    </widget>
-    <width>561</width>
     <x>8</x>
     <y>368</y>
+    <width>561</width>
+    <height>185</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM Rectangle_1</name>
+      <macros>
+        <pv_name></pv_name>
+      </macros>
+      <y>8</y>
+      <width>561</width>
+      <height>177</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grey 65%" red="166" green="166" blue="166">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label_1</name>
+      <text>PLC Tilt</text>
+      <width>144</width>
+      <height>16</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Grey 90%" red="230" green="230" blue="230">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Grey 50%" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Grey 90%" red="230" green="230" blue="230">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM Rectangle_2</name>
+      <macros>
+        <pv_name></pv_name>
+      </macros>
+      <width>145</width>
+      <height>17</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grey 75%" red="192" green="192" blue="192">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>0_1</name>
+      <x>368</x>
+      <y>32</y>
+      <width>193</width>
+      <height>41</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_1</name>
+        <pv_name>$(prefix)STAT-01:ENCDIST</pv_name>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_2</name>
+        <pv_name>$(prefix)STAT-01:BMLENGTH</pv_name>
+        <y>24</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_2</name>
+        <text>Beam length</text>
+        <x>104</x>
+        <y>24</y>
+        <width>88</width>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_3</name>
+        <text>Encoder dist.</text>
+        <x>104</x>
+        <width>88</width>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>1_1</name>
+      <x>368</x>
+      <y>72</y>
+      <width>169</width>
+      <height>105</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_4</name>
+        <text>Extreme</text>
+        <x>104</x>
+        <y>88</y>
+        <width>64</width>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_3</name>
+        <pv_name>$(prefix)STAT-01:TILTEXTR</pv_name>
+        <y>88</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_4</name>
+        <pv_name>$(prefix)STAT-01:TILTABS</pv_name>
+        <y>64</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_5</name>
+        <text>Absolute</text>
+        <x>104</x>
+        <y>64</y>
+        <width>64</width>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_6</name>
+        <text>Safe</text>
+        <x>104</x>
+        <y>40</y>
+        <width>64</width>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_5</name>
+        <pv_name>$(prefix)STAT-01:TILTSAFE</pv_name>
+        <y>40</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_7</name>
+        <text>Window
+Limits</text>
+        <width>168</width>
+        <height>40</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label_8</name>
+      <text></text>
+      <x>112</x>
+      <y>16</y>
+      <width>3</width>
+      <height>1</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text: FG" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="White" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>2_1</name>
+      <x>8</x>
+      <y>16</y>
+      <width>353</width>
+      <height>161</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_9</name>
+        <text>Upper</text>
+        <width>96</width>
+        <height>24</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_10</name>
+        <text>Lower</text>
+        <x>104</x>
+        <width>96</width>
+        <height>24</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_11</name>
+        <text>Tilt calculated (mrads)</text>
+        <x>208</x>
+        <y>120</y>
+        <width>144</width>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_12</name>
+        <text>Tilt temperature</text>
+        <x>208</x>
+        <y>144</y>
+        <width>120</width>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_14</name>
+        <text>Pot Tilt derived</text>
+        <x>208</x>
+        <y>72</y>
+        <width>104</width>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_7</name>
+        <pv_name>$(prefix)TILT-01:DER:MRADS</pv_name>
+        <y>72</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_15</name>
+        <text>Tilt Sensor calculated</text>
+        <x>208</x>
+        <y>96</y>
+        <width>144</width>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_8</name>
+        <pv_name>$(prefix)TILT-01:TILT</pv_name>
+        <y>96</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_9</name>
+        <pv_name>$(prefix)TILT-01:MRADS</pv_name>
+        <y>120</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_10</name>
+        <pv_name>$(prefix)TILT-01:TEMP</pv_name>
+        <y>144</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_16</name>
+        <text>Set offset</text>
+        <x>208</x>
+        <y>24</y>
+        <width>88</width>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>EDM Text Entry_1</name>
+        <pv_name>$(prefix)TILT-01:OUT:UOFF</pv_name>
+        <y>24</y>
+        <width>97</width>
+        <height>17</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Controller: BG" red="205" green="205" blue="205">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label_17</name>
+        <text>Tilt offset</text>
+        <x>208</x>
+        <y>48</y>
+        <width>88</width>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Text: FG" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="White" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_11</name>
+        <pv_name>$(prefix)TILT-01:UOFF</pv_name>
+        <y>48</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_12</name>
+        <pv_name>$(prefix)TILT-02:TEMP</pv_name>
+        <x>104</x>
+        <y>144</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_13</name>
+        <pv_name>$(prefix)TILT-02:MRADS</pv_name>
+        <x>104</x>
+        <y>120</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_14</name>
+        <pv_name>$(prefix)TILT-02:TILT</pv_name>
+        <x>104</x>
+        <y>96</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_15</name>
+        <pv_name>$(prefix)TILT-02:DER:MRADS</pv_name>
+        <x>104</x>
+        <y>72</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput_17</name>
+        <pv_name>$(prefix)TILT-02:LOFF</pv_name>
+        <x>104</x>
+        <y>48</y>
+        <height>16</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: FG" red="96" green="255" blue="96">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>EDM Text Entry_2</name>
+        <pv_name>$(prefix)TILT-02:OUT:LOFF</pv_name>
+        <x>104</x>
+        <y>24</y>
+        <width>97</width>
+        <height>17</height>
+        <font>
+          <font family="liberation sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Controller: BG" red="205" green="205" blue="205">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>0_2</name>
+    <x>8</x>
+    <y>46</y>
+    <width>161</width>
+    <height>49</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM Rectangle_3</name>
+      <macros>
+        <pv_name></pv_name>
+      </macros>
+      <y>8</y>
+      <width>161</width>
+      <height>41</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grey 65%" red="166" green="166" blue="166">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label_18</name>
+      <text>PLC Gap</text>
+      <width>104</width>
+      <height>16</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Grey 90%" red="230" green="230" blue="230">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Grey 50%" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Grey 90%" red="230" green="230" blue="230">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM Rectangle_4</name>
+      <macros>
+        <pv_name></pv_name>
+      </macros>
+      <width>105</width>
+      <height>17</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grey 75%" red="192" green="192" blue="192">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM TextInput_18</name>
+      <pv_name>$(prefix)PLC-01:GAP</pv_name>
+      <x>8</x>
+      <y>24</y>
+      <height>16</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Monitor: FG" red="96" green="255" blue="96">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label_19</name>
+      <text>Gap</text>
+      <x>112</x>
+      <y>24</y>
+      <width>40</width>
+      <height>16</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text: FG" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="White" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>1_2</name>
+    <x>8</x>
+    <y>102</y>
+    <width>161</width>
+    <height>49</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM Rectangle_5</name>
+      <macros>
+        <pv_name></pv_name>
+      </macros>
+      <y>8</y>
+      <width>161</width>
+      <height>41</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grey 65%" red="166" green="166" blue="166">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label_20</name>
+      <text>PLC Offset</text>
+      <width>104</width>
+      <height>16</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Grey 90%" red="230" green="230" blue="230">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Grey 50%" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Grey 90%" red="230" green="230" blue="230">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM Rectangle_6</name>
+      <macros>
+        <pv_name></pv_name>
+      </macros>
+      <width>105</width>
+      <height>17</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grey 75%" red="192" green="192" blue="192">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM TextInput_19</name>
+      <pv_name>$(prefix)PLC-01:OFFSET</pv_name>
+      <x>8</x>
+      <y>24</y>
+      <height>16</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Monitor: FG" red="96" green="255" blue="96">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label_21</name>
+      <text>Offset</text>
+      <x>112</x>
+      <y>24</y>
+      <width>40</width>
+      <height>16</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text: FG" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="White" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>2_2</name>
+    <x>8</x>
+    <y>158</y>
+    <width>161</width>
+    <height>49</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM Rectangle_7</name>
+      <macros>
+        <pv_name></pv_name>
+      </macros>
+      <y>8</y>
+      <width>161</width>
+      <height>41</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grey 65%" red="166" green="166" blue="166">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label_22</name>
+      <text>PLC Taper</text>
+      <width>104</width>
+      <height>16</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Grey 90%" red="230" green="230" blue="230">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Grey 50%" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Grey 90%" red="230" green="230" blue="230">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM Rectangle_8</name>
+      <macros>
+        <pv_name></pv_name>
+      </macros>
+      <width>105</width>
+      <height>17</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grey 75%" red="192" green="192" blue="192">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM TextInput_20</name>
+      <pv_name>$(prefix)PLC-01:TAPER</pv_name>
+      <x>8</x>
+      <y>24</y>
+      <height>16</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Monitor: FG" red="96" green="255" blue="96">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label_23</name>
+      <text>Taper</text>
+      <x>112</x>
+      <y>24</y>
+      <width>40</width>
+      <height>16</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text: FG" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="White" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>3</name>
+    <x>529</x>
+    <y>232</y>
+    <width>161</width>
+    <height>137</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM Rectangle_9</name>
+      <macros>
+        <pv_name></pv_name>
+      </macros>
+      <y>16</y>
+      <width>153</width>
+      <height>121</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grey 65%" red="166" green="166" blue="166">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label_24</name>
+      <text>PLC Communication
+Counter</text>
+      <width>128</width>
+      <height>32</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Grey 90%" red="230" green="230" blue="230">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Grey 50%" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Grey 90%" red="230" green="230" blue="230">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM Rectangle_10</name>
+      <macros>
+        <pv_name></pv_name>
+      </macros>
+      <width>129</width>
+      <height>33</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grey 75%" red="192" green="192" blue="192">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM TextInput_21</name>
+      <pv_name>$(prefix)PLC-01:OUT:COUNT</pv_name>
+      <x>8</x>
+      <y>48</y>
+      <width>64</width>
+      <height>16</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Monitor: FG" red="96" green="255" blue="96">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label_25</name>
+      <text>Comms
+counter</text>
+      <x>80</x>
+      <y>40</y>
+      <width>56</width>
+      <height>32</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text: FG" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="White" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM TextInput_22</name>
+      <pv_name>$(prefix)PLC-01:COUNTRBK</pv_name>
+      <x>8</x>
+      <y>80</y>
+      <width>64</width>
+      <height>16</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Monitor: FG" red="96" green="255" blue="96">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label_26</name>
+      <text>Comms
+counter rbk</text>
+      <x>80</x>
+      <y>72</y>
+      <width>80</width>
+      <height>32</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text: FG" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="White" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM TextInput_23</name>
+      <pv_name>$(prefix)PLC-01:COUNT</pv_name>
+      <x>8</x>
+      <y>112</y>
+      <width>64</width>
+      <height>16</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Monitor: FG" red="96" green="255" blue="96">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label_27</name>
+      <text>PLC
+counter</text>
+      <x>80</x>
+      <y>104</y>
+      <width>56</width>
+      <height>32</height>
+      <font>
+        <font family="liberation sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text: FG" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="White" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
   </widget>
 </display>
