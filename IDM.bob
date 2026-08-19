@@ -5,7 +5,7 @@
     <actions>
       <action type="open_display">
         <description>Open Display</description>
-        <file>IDM_Top4.bob</file>
+        <file>IDM_Top.bob</file>
         <macros>
           <prefix>TS02K-MO-</prefix>
           <suff1>0</suff1>
