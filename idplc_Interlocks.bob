@@ -664,7 +664,7 @@ Interlocks</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_67</name>
-      <pv_name>$(prefix)PLC-01:ST3:BIT1</pv_name>
+      <pv_name>$(prefix)PLC-01:MAIN:ILK1</pv_name>
       <y>24</y>
       <background_color>
         <color name="Transparent" red="255" green="255" blue="255" alpha="0">
@@ -673,7 +673,7 @@ Interlocks</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_68</name>
-      <pv_name>$(prefix)PLC-01:ST3:BIT2</pv_name>
+      <pv_name>$(prefix)PLC-01:MAIN:ILK2</pv_name>
       <y>48</y>
       <background_color>
         <color name="Transparent" red="255" green="255" blue="255" alpha="0">
@@ -682,7 +682,7 @@ Interlocks</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_69</name>
-      <pv_name>$(prefix)PLC-01:ST3:BIT3</pv_name>
+      <pv_name>$(prefix)PLC-01:MAIN:ILK3</pv_name>
       <y>72</y>
       <background_color>
         <color name="Transparent" red="255" green="255" blue="255" alpha="0">
@@ -691,7 +691,7 @@ Interlocks</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_70</name>
-      <pv_name>$(prefix)PLC-01:ST3:BIT4</pv_name>
+      <pv_name>$(prefix)PLC-01:MAIN:ILK4</pv_name>
       <y>96</y>
       <background_color>
         <color name="Transparent" red="255" green="255" blue="255" alpha="0">
@@ -700,7 +700,7 @@ Interlocks</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_71</name>
-      <pv_name>$(prefix)PLC-01:ST3:BIT5</pv_name>
+      <pv_name>$(prefix)PLC-01:MAIN:ILK5</pv_name>
       <y>120</y>
       <background_color>
         <color name="Transparent" red="255" green="255" blue="255" alpha="0">
@@ -709,7 +709,7 @@ Interlocks</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_72</name>
-      <pv_name>$(prefix)PLC-01:ST3:BIT6</pv_name>
+      <pv_name>$(prefix)PLC-01:MAIN:ILK6</pv_name>
       <y>144</y>
       <background_color>
         <color name="Transparent" red="255" green="255" blue="255" alpha="0">
@@ -718,7 +718,7 @@ Interlocks</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_73</name>
-      <pv_name>$(prefix)PLC-01:ST3:BIT7</pv_name>
+      <pv_name>$(prefix)PLC-01:MAIN:ILK7</pv_name>
       <y>168</y>
       <background_color>
         <color name="Transparent" red="255" green="255" blue="255" alpha="0">
@@ -727,7 +727,7 @@ Interlocks</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_74</name>
-      <pv_name>$(prefix)PLC-01:ST3:BIT8</pv_name>
+      <pv_name>$(prefix)PLC-01:MAIN:ILK8</pv_name>
       <y>192</y>
       <background_color>
         <color name="Transparent" red="255" green="255" blue="255" alpha="0">
@@ -736,7 +736,7 @@ Interlocks</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_75</name>
-      <pv_name>$(prefix)PLC-01:ST3:BIT9</pv_name>
+      <pv_name>$(prefix)PLC-01:MAIN:ILK9</pv_name>
       <y>216</y>
       <background_color>
         <color name="Transparent" red="255" green="255" blue="255" alpha="0">
@@ -745,7 +745,7 @@ Interlocks</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_76</name>
-      <pv_name>$(prefix)PLC-01:ST3:BIT10</pv_name>
+      <pv_name>$(prefix)PLC-01:MAIN:ILK10</pv_name>
       <y>240</y>
       <background_color>
         <color name="Transparent" red="255" green="255" blue="255" alpha="0">
@@ -1002,7 +1002,7 @@ $(pv_value)</tooltip>
       <text>Initial</text>
       <y>12</y>
       <width>24</width>
-      <height>12</height>
+      <height>11</height>
       <font>
         <font family="Liberation Sans" style="REGULAR" size="10.0">
         </font>
@@ -1030,7 +1030,7 @@ $(pv_value)</tooltip>
       <text>Current</text>
       <y>24</y>
       <width>34</width>
-      <height>12</height>
+      <height>11</height>
       <font>
         <font family="Liberation Sans" style="REGULAR" size="10.0">
         </font>
@@ -1057,7 +1057,7 @@ $(pv_value)</tooltip>
       <name>EDM Label_8</name>
       <text>Latched</text>
       <width>36</width>
-      <height>12</height>
+      <height>11</height>
       <font>
         <font family="Liberation Sans" style="REGULAR" size="10.0">
         </font>
@@ -1455,7 +1455,7 @@ $(pv_value)</tooltip>
       <x>84</x>
       <y>31</y>
       <width>24</width>
-      <height>12</height>
+      <height>11</height>
       <font>
         <font family="Liberation Sans" style="REGULAR" size="10.0">
         </font>
@@ -1484,7 +1484,7 @@ $(pv_value)</tooltip>
       <x>84</x>
       <y>43</y>
       <width>34</width>
-      <height>12</height>
+      <height>11</height>
       <font>
         <font family="Liberation Sans" style="REGULAR" size="10.0">
         </font>
@@ -1513,7 +1513,7 @@ $(pv_value)</tooltip>
       <x>84</x>
       <y>19</y>
       <width>36</width>
-      <height>12</height>
+      <height>11</height>
       <font>
         <font family="Liberation Sans" style="REGULAR" size="10.0">
         </font>
@@ -2138,7 +2138,7 @@ $(pv_value)</tooltip>
       <x>84</x>
       <y>31</y>
       <width>24</width>
-      <height>12</height>
+      <height>11</height>
       <font>
         <font family="Liberation Sans" style="REGULAR" size="10.0">
         </font>
@@ -2167,7 +2167,7 @@ $(pv_value)</tooltip>
       <x>84</x>
       <y>43</y>
       <width>34</width>
-      <height>12</height>
+      <height>11</height>
       <font>
         <font family="Liberation Sans" style="REGULAR" size="10.0">
         </font>
@@ -2196,7 +2196,7 @@ $(pv_value)</tooltip>
       <x>84</x>
       <y>19</y>
       <width>36</width>
-      <height>12</height>
+      <height>11</height>
       <font>
         <font family="Liberation Sans" style="REGULAR" size="10.0">
         </font>
@@ -2965,7 +2965,7 @@ $(pv_value)</tooltip>
       <x>84</x>
       <y>31</y>
       <width>24</width>
-      <height>12</height>
+      <height>11</height>
       <font>
         <font family="Liberation Sans" style="REGULAR" size="10.0">
         </font>
@@ -2994,7 +2994,7 @@ $(pv_value)</tooltip>
       <x>84</x>
       <y>43</y>
       <width>34</width>
-      <height>12</height>
+      <height>11</height>
       <font>
         <font family="Liberation Sans" style="REGULAR" size="10.0">
         </font>
@@ -3023,7 +3023,7 @@ $(pv_value)</tooltip>
       <x>84</x>
       <y>19</y>
       <width>36</width>
-      <height>12</height>
+      <height>11</height>
       <font>
         <font family="Liberation Sans" style="REGULAR" size="10.0">
         </font>
