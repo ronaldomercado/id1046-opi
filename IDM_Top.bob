@@ -765,24 +765,6 @@
         <vertical_alignment>1</vertical_alignment>
       </widget>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>EDM activeXTextClass</name>
-      <text>Upper D/S</text>
-      <x>13</x>
-      <y>95</y>
-      <width>72</width>
-      <height>24</height>
-      <foreground_color>
-        <color name="Black" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="Disconn/Invalid" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
     <widget type="textupdate" version="2.0.0">
       <name>EDM TextupdateClass</name>
       <pv_name>$(prefix)SERVO-01:MOT.RBV</pv_name>
@@ -1067,138 +1049,6 @@
         </foreground_color>
       </widget>
     </widget>
-    <widget type="group" version="3.0.0">
-      <name>Group</name>
-      <x>13</x>
-      <y>127</y>
-      <height>24</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="byte_monitor" version="2.0.0">
-        <name>EDM ByteClass</name>
-        <pv_name>$(prefix)SERVO-02:LLSW</pv_name>
-        <x>284</x>
-        <y>4</y>
-        <width>16</width>
-        <height>16</height>
-        <numBits>1</numBits>
-        <horizontal>false</horizontal>
-        <square>true</square>
-        <off_color>
-          <color name="Red LED: On" red="255" green="0" blue="0">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="Green LED: On" red="0" green="255" blue="0">
-          </color>
-        </on_color>
-        <foreground_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-      </widget>
-      <widget type="byte_monitor" version="2.0.0">
-        <name>EDM ByteClass</name>
-        <pv_name>$(prefix)SERVO-02:HLSW</pv_name>
-        <x>252</x>
-        <y>4</y>
-        <width>16</width>
-        <height>16</height>
-        <numBits>1</numBits>
-        <horizontal>false</horizontal>
-        <square>true</square>
-        <off_color>
-          <color name="Red LED: On" red="255" green="0" blue="0">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="Green LED: On" red="0" green="255" blue="0">
-          </color>
-        </on_color>
-        <foreground_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-      </widget>
-      <widget type="ellipse" version="2.0.0">
-        <name>EDM activeCircleClass</name>
-        <x>219</x>
-        <y>4</y>
-        <width>16</width>
-        <height>16</height>
-        <line_width>1</line_width>
-        <line_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-        <background_color>
-          <color name="Red LED: On" red="255" green="0" blue="0">
-          </color>
-        </background_color>
-        <rules>
-          <rule name="EDM visibility" prop_id="visible" out_exp="false">
-            <exp bool_exp="pv0&gt;=0.0 &amp;&amp; pv0&lt;1.0">
-              <value>true</value>
-            </exp>
-            <exp bool_exp="true">
-              <value>false</value>
-            </exp>
-            <pv_name>$(prefix)SERVO-02:POSOK</pv_name>
-          </rule>
-        </rules>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>EDM TextupdateClass</name>
-        <pv_name>$(prefix)SERVO-02:MOT.RBV</pv_name>
-        <x>82</x>
-        <y>2</y>
-        <width>124</width>
-        <foreground_color>
-          <color name="Monitor: NORMAL" red="0" green="224" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="grey-13" red="45" green="45" blue="45">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>EDM activeXTextClass</name>
-        <text>Upper U/S</text>
-        <width>72</width>
-        <height>24</height>
-        <foreground_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="Disconn/Invalid" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <horizontal_alignment>2</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>EDM activeXTextClass</name>
-      <text>Lower D/S</text>
-      <x>13</x>
-      <y>159</y>
-      <width>72</width>
-      <height>24</height>
-      <foreground_color>
-        <color name="Black" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="Disconn/Invalid" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
     <widget type="textupdate" version="2.0.0">
       <name>EDM TextupdateClass</name>
       <pv_name>$(prefix)SERVO-03:MOT.RBV</pv_name>
@@ -1352,23 +1202,153 @@
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>EDM activeXTextClass</name>
-      <text>Lower U/S</text>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_19</name>
+      <pv_name>$(prefix)SERVO-01:MOT.DESC</pv_name>
       <x>13</x>
-      <y>191</y>
+      <y>97</y>
       <width>72</width>
       <height>24</height>
-      <foreground_color>
-        <color name="Black" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
       <background_color>
-        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
         </color>
       </background_color>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_21</name>
+      <pv_name>$(prefix)SERVO-03:MOT.DESC</pv_name>
+      <x>13</x>
+      <y>161</y>
+      <width>72</width>
+      <height>24</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_22</name>
+      <pv_name>$(prefix)SERVO-04:MOT.DESC</pv_name>
+      <x>13</x>
+      <y>193</y>
+      <width>72</width>
+      <height>24</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <x>13</x>
+      <y>127</y>
+      <height>24</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>EDM ByteClass</name>
+        <pv_name>$(prefix)SERVO-02:LLSW</pv_name>
+        <x>284</x>
+        <y>4</y>
+        <width>16</width>
+        <height>16</height>
+        <numBits>1</numBits>
+        <horizontal>false</horizontal>
+        <square>true</square>
+        <off_color>
+          <color name="Red LED: On" red="255" green="0" blue="0">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="Green LED: On" red="0" green="255" blue="0">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>EDM ByteClass</name>
+        <pv_name>$(prefix)SERVO-02:HLSW</pv_name>
+        <x>252</x>
+        <y>4</y>
+        <width>16</width>
+        <height>16</height>
+        <numBits>1</numBits>
+        <horizontal>false</horizontal>
+        <square>true</square>
+        <off_color>
+          <color name="Red LED: On" red="255" green="0" blue="0">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="Green LED: On" red="0" green="255" blue="0">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>EDM activeCircleClass</name>
+        <x>219</x>
+        <y>4</y>
+        <width>16</width>
+        <height>16</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Red LED: On" red="255" green="0" blue="0">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=0.0 &amp;&amp; pv0&lt;1.0">
+              <value>true</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>false</value>
+            </exp>
+            <pv_name>$(prefix)SERVO-02:POSOK</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextupdateClass</name>
+        <pv_name>$(prefix)SERVO-02:MOT.RBV</pv_name>
+        <x>82</x>
+        <y>2</y>
+        <width>124</width>
+        <foreground_color>
+          <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-13" red="45" green="45" blue="45">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_20</name>
+        <pv_name>$(prefix)SERVO-02:MOT.DESC</pv_name>
+        <width>72</width>
+        <height>24</height>
+        <background_color>
+          <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+          </color>
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
