@@ -14,12 +14,28 @@
           <pmac>192.168.116.1</pmac>
           <server>hpmu-k16</server>
         </macros>
-        <target>replace</target>
+        <target>tab</target>
       </action>
     </actions>
     <text>Open Main Screen</text>
     <x>40</x>
     <y>20</y>
+    <width>140</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_5</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>motor-button.bob</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Motor Screens</text>
+    <x>40</x>
+    <y>90</y>
     <width>140</width>
     <height>50</height>
     <tooltip>$(actions)</tooltip>
