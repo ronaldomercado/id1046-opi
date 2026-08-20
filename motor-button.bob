@@ -10,7 +10,7 @@
           <P>TS16K-MO-</P>
           <M>SERVO-01:MOT</M>
         </macros>
-        <target>replace</target>
+        <target>tab</target>
       </action>
     </actions>
     <text>Motor1</text>
@@ -30,7 +30,7 @@
           <P>TS16K-MO-</P>
           <M>SERVO-02:MOT</M>
         </macros>
-        <target>replace</target>
+        <target>tab</target>
       </action>
     </actions>
     <text>Motor2</text>
@@ -50,7 +50,7 @@
           <P>TS16K-MO-</P>
           <M>SERVO-03:MOT</M>
         </macros>
-        <target>replace</target>
+        <target>tab</target>
       </action>
     </actions>
     <text>Motor3</text>
@@ -70,7 +70,7 @@
           <P>TS16K-MO-</P>
           <M>SERVO-04:MOT</M>
         </macros>
-        <target>replace</target>
+        <target>tab</target>
       </action>
     </actions>
     <text>Motor4</text>
@@ -90,7 +90,7 @@
           <P>TS16K-MO-</P>
           <M>SERVC-01:CS:GAP</M>
         </macros>
-        <target>replace</target>
+        <target>tab</target>
       </action>
     </actions>
     <text>GAP CS motor</text>
@@ -110,7 +110,7 @@
           <P>TS16K-MO-</P>
           <M>SERVC-01:CS:OFFSET</M>
         </macros>
-        <target>replace</target>
+        <target>tab</target>
       </action>
     </actions>
     <text>OFFSET CS motor</text>
