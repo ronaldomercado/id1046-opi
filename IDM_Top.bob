@@ -351,7 +351,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>EDM TextupdateClass</name>
-      <pv_name>$(prefix)SERVC-01:CURROFFD</pv_name>
+      <pv_name>$(prefix)SERVC-01:CS:OFFSET.RBV</pv_name>
       <x>95</x>
       <y>63</y>
       <width>124</width>
