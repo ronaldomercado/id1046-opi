@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_4</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>temp/autoconvert/motorx_more.bob</file>
+        <macros>
+          <P>TS16K-MO-</P>
+          <M>SERVO-01:MOT</M>
+        </macros>
+        <target>replace</target>
+      </action>
+    </actions>
+    <text>Motor1</text>
+    <x>40</x>
+    <y>20</y>
+    <width>140</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_5</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>temp/autoconvert/motorx_more.bob</file>
+        <macros>
+          <P>TS16K-MO-</P>
+          <M>SERVO-02:MOT</M>
+        </macros>
+        <target>replace</target>
+      </action>
+    </actions>
+    <text>Motor2</text>
+    <x>40</x>
+    <y>80</y>
+    <width>140</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_6</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>temp/autoconvert/motorx_more.bob</file>
+        <macros>
+          <P>TS16K-MO-</P>
+          <M>SERVO-03:MOT</M>
+        </macros>
+        <target>replace</target>
+      </action>
+    </actions>
+    <text>Motor3</text>
+    <x>40</x>
+    <y>140</y>
+    <width>140</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_7</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>temp/autoconvert/motorx_more.bob</file>
+        <macros>
+          <P>TS16K-MO-</P>
+          <M>SERVO-04:MOT</M>
+        </macros>
+        <target>replace</target>
+      </action>
+    </actions>
+    <text>Motor4</text>
+    <x>40</x>
+    <y>200</y>
+    <width>140</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_8</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>temp/autoconvert/motorx_more.bob</file>
+        <macros>
+          <P>TS16K-MO-</P>
+          <M>SERVC-01:CS:GAP</M>
+        </macros>
+        <target>replace</target>
+      </action>
+    </actions>
+    <text>GAP CS motor</text>
+    <x>250</x>
+    <y>40</y>
+    <width>140</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_9</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>temp/autoconvert/motorx_more.bob</file>
+        <macros>
+          <P>TS16K-MO-</P>
+          <M>SERVC-01:CS:OFFSET</M>
+        </macros>
+        <target>replace</target>
+      </action>
+    </actions>
+    <text>OFFSET CS motor</text>
+    <x>250</x>
+    <y>110</y>
+    <width>140</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>
